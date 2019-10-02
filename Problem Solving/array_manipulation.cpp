@@ -8,10 +8,7 @@ vector<string> split_string(string);
 
 // Complete the arrayManipulation function below.
 long arrayManipulation(int n, vector<vector<int>> queries, long m) {
-    vector<long> arr(n);
-    for(int i=0;i<n;i++){
-        arr.push_back(0);
-    }
+    vector<long> arr(n+1,0);
     for(int i = 0;i<m;i++){
     	// Read the values
         long left = queries[i][0];
